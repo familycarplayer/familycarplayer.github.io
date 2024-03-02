@@ -1,19 +1,16 @@
 <head>
-  <title>{{ site.title }}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base target="_blank">
 
-  <!-- Meta -->
-  <meta charset="utf-8">
-  {% if site.chrome_mobile_color %}
-  <meta name="theme-color" content="{{ site.chrome_mobile_color }}">
-  {% endif%}
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.description}}">
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="shortcut icon" href="favicon.ico">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<title class="pageTitle">{{ site.title }}</title>
+	<meta name="description" content="{{ site.app_description }}">
+
+	<link rel="shortcut icon" href="{{site.app_icon}}">
+
+	<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{site./baseurl}}/main.css">
 </head>

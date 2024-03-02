@@ -1,14 +1,71 @@
 title: Family Car Player
 email: family.car.player@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/fcp_web" # the subpath of your site, e.g. /blog
+url: "https://familycarplayer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# App Info
+ios_app_id: 6476625501
+appstore_link: https://apps.apple.com/us/app/family-car-player/id6476625501
+playstore_link: https://play.google.com/store/apps/details?id=com.dmlv.fcp
+app_icon: assets/appicon.png
+app_description: Multimedia player for your children designed to use in the car.   
+email_address: family.car.player@gmail.com
+
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+
+features:
+
+  - title: Local files & Youtube links.
+    description: Add multimedia files located in the device and Youtube links.
+    fontawesome_icon_name: "fa-brands fa-youtube"
+
+  - title: Bluetooth Nearby.
+    description:   Control multimedia content your children watch in the car with bluetooth nearby.
+    fontawesome_icon_name: "fa-brands fa-bluetooth-b"
+  
+  - title: Roadmap for purchases.
+    description: <li>iOS->Android, Android->iOS communication</li><li>Apple Car Play</li><li>Android Auto</li>
+    fontawesome_icon_name: "fa-solid fa-road"
+
+
+# Theme Settings
+topbar_color                              : "#000000"
+topbar_transparency                       : 0.1
+topbar_title_color                        : "#ffffff"
+
+cover_image                               : assets/headerimage.jpg                   # Replace with alternative image path or image URL.
+cover_overlay_color                       : "#363b3d"
+cover_overlay_transparency                : 0.8
+
+device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+
+body_background_color                     : "#ffffff"
+
+link_color                                : "#1d63ea"
+
+app_title_color                           : "#ffffff"
+app_price_color                           : "#ffffff"
+app_description_color                     : "#ffffff"
+
+feature_title_color                       : "#000000"
+feature_text_color                        : "#666666"
+
+feature_icons_foreground_color            : "#1d63ea"
+feature_icons_background_color            : "#e6e6e6"
+
+social_icons_foreground_color             : "#666666"
+social_icons_background_color             : "#e6e6e6"
+
+footer_text_color                         : "#666666"

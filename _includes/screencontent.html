@@ -1,0 +1,21 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+
+    let i = 1;
+    $(".iphoneScreen").attr('src', "/fcp_web/assets/screenshot/ss"+ i +".jpeg");
+    $(".iphoneScreen").attr('transform', "translateX(-${"+i+"*100}%)");
+    let iphonePreviewHeight =  $(".iphonePreview").height();
+    iphonePreviewHeight = iphonePreviewHeight -50;
+    $('.iphoneScreen').css("height", iphonePreviewHeight+"px");
+
+    setInterval(() => {
+        i++;
+        if (i == 5) i = 1;
+        $(".iphoneScreen").attr('src', "/fcp_web/assets/screenshot/ss"+ i +".jpeg");
+        $(".iphoneScreen").attr('transform', "translateX(-${"+i+"*100}%)");
+        let iphonePreviewHeight =  $(".iphonePreview").height();
+        iphonePreviewHeight = iphonePreviewHeight -50;
+        $('.iphoneScreen').css("height", iphonePreviewHeight+"px");
+    },2000);
+</script>
