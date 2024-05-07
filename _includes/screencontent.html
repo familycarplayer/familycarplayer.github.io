@@ -3,7 +3,7 @@
 <script>
 
     let i = 1;
-    $(".iphoneScreen").attr('src', "/fcp_web/assets/screenshot/ss"+ i +".jpeg");
+    $(".iphoneScreen").attr('src', "/assets/screenshot/ss"+ i +".jpeg");
     $(".iphoneScreen").attr('transform', "translateX(-${"+i+"*100}%)");
     let iphonePreviewHeight =  $(".iphonePreview").height();
     iphonePreviewHeight = iphonePreviewHeight -50;
@@ -12,7 +12,7 @@
     setInterval(() => {
         i++;
         if (i == 5) i = 1;
-        $(".iphoneScreen").attr('src', "/fcp_web/assets/screenshot/ss"+ i +".jpeg");
+        $(".iphoneScreen").attr('src', "/assets/screenshot/ss"+ i +".jpeg");
         $(".iphoneScreen").attr('transform', "translateX(-${"+i+"*100}%)");
         let iphonePreviewHeight =  $(".iphonePreview").height();
         iphonePreviewHeight = iphonePreviewHeight -50;
