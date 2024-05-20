@@ -1,0 +1,16 @@
+{
+    "name": "Youtube Downloader",
+    "short_name": "YoutubeDownloader",
+    "description": "Downloader",
+    "start_url": "/download.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "assets/appicon.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ]
+}
